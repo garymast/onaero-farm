@@ -67,7 +67,9 @@ body {
     padding-left: 0px !important;
 }
 
-
+.bg-black {
+    background-color: black;
+}
 
 .shop-now-button:hover,
 .shop-now-button:active,
