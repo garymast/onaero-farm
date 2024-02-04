@@ -1,0 +1,136 @@
+html {
+    height: 100%;
+}
+
+body {
+    /* background: url('/media/pexels-matthias-oben-3687927.jpg') no-repeat center center fixed; */
+    /* background-size: cover;
+    height: calc(100vh - 105px); */
+    color: #555;
+    font-family: 'Lato';
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.image_container {
+    background: url('/media/pexels-matthias-oben-3687927.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 400px;
+    display:block;
+}
+
+.site-nav {
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 5px;
+}
+
+.nav-container {
+    background-color: white;
+}
+
+.logo-padding {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.right-pad{
+    padding-right: 190px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+}
+
+.header-container {
+    padding-top: 150px;
+}
+
+.nav-link-active{
+    border-bottom: 7px solid black !important;
+    }
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 245px;
+    }
+
+    .right-pad{
+        padding-right: 10px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .header-container {
+        padding-top: 418px;
+    }
+
+}
