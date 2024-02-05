@@ -42,8 +42,8 @@ body {
     color: white;
 }
 
-.image_container {
-    background: url('/media/pexels-matthias-oben-3687927.jpg') no-repeat center center fixed;
+.image-container {
+    background: url('/media/pexels-matthias-oben-3687927.jpg') no-repeat center center;
     background-size: cover;
     height: 400px;
     display:block;
@@ -69,6 +69,10 @@ body {
 
 .bg-black {
     background-color: black;
+}
+
+.bg-white {
+    background-color: white;
 }
 
 .shop-now-button:hover,
@@ -99,7 +103,7 @@ a {
     margin: 0 auto;
 }
 
-.header-container {
+.image-container {
     padding-top: 143px;
 }
 
@@ -129,7 +133,7 @@ a {
 }
 
 @media (max-width: 991px) {
-    .header-container {
+    .image-container {
         padding-top: 203px;
     }
 
@@ -140,7 +144,7 @@ a {
 }
 
 @media (max-width: 575px) {
-    .header-container {
+    .image-container {
         padding-top: 409px;
     }
 
