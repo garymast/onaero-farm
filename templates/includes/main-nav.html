@@ -3,7 +3,17 @@
     <nav class="nav nav-pills flex-column flex-sm-row site-nav">         
             <a class="flex-sm-fill text-sm-center nav-link nav-link-active" href="#">Home</a>
             <a class="flex-sm-fill text-sm-center nav-link" href="#">About Us</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'products' %}">Online Shop</a>
+            
+            <a class="dropdown nav-drop">
+                <a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Online Shop</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=fruit">Fruit</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=vegetables">Vegetables</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=nuts">Nuts</a>
+                </div>
+            </a>
+
             <a class="flex-sm-fill text-sm-center nav-link" href="#">Wholesale</a>
             <a class="flex-sm-fill text-sm-center nav-link" href="#">Contact</a>
     </nav>
