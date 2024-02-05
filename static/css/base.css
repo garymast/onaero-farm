@@ -42,7 +42,7 @@ body {
     color: white;
 }
 
-.image-container {
+.image-con {
     background: url('/media/pexels-matthias-oben-3687927.jpg') no-repeat center center;
     background-size: cover;
     height: 400px;
@@ -103,7 +103,7 @@ a {
     margin: 0 auto;
 }
 
-.image-container {
+.image-con {
     padding-top: 143px;
 }
 
@@ -133,7 +133,7 @@ a {
 }
 
 @media (max-width: 991px) {
-    .image-container {
+    .image-con {
         padding-top: 203px;
     }
 
@@ -144,7 +144,7 @@ a {
 }
 
 @media (max-width: 575px) {
-    .image-container {
+    .image-con {
         padding-top: 409px;
     }
 
