@@ -25,11 +25,13 @@
                 <p class="mb-0">{{ product.name }}</p>
                 <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
                 <small class="text-muted"><span>Origin: </span>{{ product.origin }}</small>
-
+                <small class="text-muted"><br><span><i class="fa-solid fa-tag"></i> </span>{{ product.category.friendly_name }}</small>
                 {% if product.is_organic %}
-                <small class="text-muted"><br><i class="fa-brands fa-envira"></i>Organic Product</small>
+                <small class="text-muted"><br><span><i class="fa-brands fa-envira"></i> </span>Organic Product</small>
                 {% else %}
                 {% endif %}
+                
+
 
                 <p class="mt-3">{{ product.description }}</p>
             </div>
