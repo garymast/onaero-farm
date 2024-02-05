@@ -23,8 +23,11 @@ body {
     font-size: 30px;
 }
 
-.sunshiney {
-    font-family: 'Sunshiney', cursive;
+.logo-font-2 {
+    /* font-family: 'Ms Madi', cursive; */
+    font-family: 'Caveat', cursive;
+    
+    font-size: 35px;
 }
 
 .main-logo-link {
