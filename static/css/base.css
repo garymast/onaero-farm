@@ -55,6 +55,16 @@ body {
     margin-bottom: 5px;
 }
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+a:hover {
+    color: black;
+    font-weight: bold;
+}
+
 .nav-container {
     background-color: white;
 }

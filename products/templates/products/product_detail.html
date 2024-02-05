@@ -25,9 +25,15 @@
                 <p class="mb-0">{{ product.name }}</p>
                 <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
                 <small class="text-muted"><span>Origin: </span>{{ product.origin }}</small>
-                <small class="text-muted"><br><span><i class="fa-solid fa-tag"></i> </span>{{ product.category.friendly_name }}</small>
+                {% if product.category %}
+                    <p class="small mt-1 mb-0">
+                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                        </a>
+                    </p>
+                {% endif %}
                 {% if product.is_organic %}
-                <small class="text-muted"><br><span><i class="fa-brands fa-envira"></i> </span>Organic Product</small>
+                <small class="text-muted"><span><i class="fa-brands fa-envira"></i> </span>Organic Product</small>
                 {% else %}
                 {% endif %}
                 
