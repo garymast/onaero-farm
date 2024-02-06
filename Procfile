@@ -1,0 +1,1 @@
+web: gunicorn onaero_farm.wsgi:application

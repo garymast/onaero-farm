@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,8 +27,8 @@ SECRET_KEY = 'django-insecure-iz!2e$&agm($+j^$bzz-qbc01h6%7wgamfsog)*q+g0ogl&jq-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-garymast-onaerofarm-eso41bgwo00.ws-eu108.gitpod.io']
-
+ALLOWED_HOSTS = ['onaero-farm.herokuapp.com', '8000-garymast-onaerofarm-eso41bgwo00.ws-eu108.gitpod.io']
+# ALLOWED_HOSTS = ['8000-garymast-onaerofarm-eso41bgwo00.ws-eu108.gitpod.io']
 
 # Application definition
 
@@ -99,13 +100,17 @@ WSGI_APPLICATION = 'onaero_farm.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
-
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
