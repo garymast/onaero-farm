@@ -1,0 +1,122 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "sku": "pp12345678",
+        "name": "Feijoas (each)",
+        "description": "Locally grown feijoas",
+        "price": "1.50",
+        "image_url": null,
+        "image": "feijoas-pexels-anastasia-yudin-4235460.jpg",
+        "is_organic": true,
+        "origin": "Onaero Farm"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "category": 1,
+        "sku": "pp12345679",
+        "name": "Strawberries (500g)",
+        "description": "Fresh locally grown strawberries",
+        "price": "4.00",
+        "image_url": null,
+        "image": "strawberries-pexels-pixabay-46174.jpg",
+        "is_organic": true,
+        "origin": "Onaero Farm"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "category": 1,
+        "sku": "pp12345677",
+        "name": "Oranges (kg)",
+        "description": "Imported Valencia oranges",
+        "price": "3.00",
+        "image_url": null,
+        "image": "oranges-pexels-engin-akyurt-2084239.jpg",
+        "is_organic": false,
+        "origin": "Australia"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "category": 2,
+        "sku": "pp12345676",
+        "name": "Macadamias (100g)",
+        "description": "Freshly harvested macadamia nuts",
+        "price": "10.00",
+        "image_url": null,
+        "image": "macadamias-pexels-engin-akyurt-5425013_NVFActH.jpg",
+        "is_organic": true,
+        "origin": "Onaero Farm"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "category": 3,
+        "sku": "pp12345675",
+        "name": "Potatoes (kg)",
+        "description": "Freshly harvested potatoes",
+        "price": "5.00",
+        "image_url": null,
+        "image": "potatoes-pexels-pixabay-144248.jpg",
+        "is_organic": true,
+        "origin": "Onaero Farm"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "category": 3,
+        "sku": "pp12345674",
+        "name": "Sweet Potatoes (kg)",
+        "description": "Freshly harvested sweet potato",
+        "price": "8.00",
+        "image_url": null,
+        "image": "sweetpotato-pexels-jorge-romero-6060223.jpg",
+        "is_organic": true,
+        "origin": "Onaero Farm"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "category": 3,
+        "sku": "pp12345673",
+        "name": "Avocados (each)",
+        "description": "Freshly picked large avocados",
+        "price": "1.50",
+        "image_url": null,
+        "image": "avocados-pexels-suraphat-nueaon-940902.jpg",
+        "is_organic": true,
+        "origin": "Onaero Farm"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "category": 3,
+        "sku": "pp12345673",
+        "name": "Tomatoes (each)",
+        "description": "Freshly picked tomatoes",
+        "price": "3.00",
+        "image_url": null,
+        "image": "tomatoes-pexels-pixabay-533280.jpg",
+        "is_organic": true,
+        "origin": "Onaero Farm"
+    }
+}
+]

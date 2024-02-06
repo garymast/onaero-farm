@@ -15,7 +15,6 @@ import os
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
-    print('yes')
 
 
 
@@ -28,6 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
+# SECRET_KEY = ""
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
@@ -118,6 +118,13 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+
+
+# For adding data to elephantSQL
+# DATABASES = {
+#      'default': dj_database_url.parse('postgres://nmmrowir:Gh4XISp8AAniULHUeQc21Bz3RB8nsqDt@tai.db.elephantsql.com/nmmrowir')
+#  }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
