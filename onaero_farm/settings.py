@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-iz!2e$&agm($+j^$bzz-qbc01h6%7wgamfsog)*q+g0ogl&jq-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['onaero-farm.herokuapp.com', '8000-garymast-onaerofarm-eso41bgwo00.ws-eu108.gitpod.io']
+ALLOWED_HOSTS = ['onaero-farm-530d4e34be31.herokuapp.com', '8000-garymast-onaerofarm-eso41bgwo00.ws-eu108.gitpod.io']
 # ALLOWED_HOSTS = ['8000-garymast-onaerofarm-eso41bgwo00.ws-eu108.gitpod.io']
 
 # Application definition
