@@ -9,7 +9,7 @@
         "description": "Locally grown feijoas",
         "price": "1.50",
         "image_url": null,
-        "image": "feijoas-pexels-anastasia-yudin-4235460.jpg",
+        "image": "feijoas-4235460.jpg",
         "is_organic": true,
         "origin": "Onaero Farm"
     }
@@ -24,7 +24,7 @@
         "description": "Fresh locally grown strawberries",
         "price": "4.00",
         "image_url": null,
-        "image": "strawberries-pexels-pixabay-46174.jpg",
+        "image": "strawberries-46174.jpg",
         "is_organic": true,
         "origin": "Onaero Farm"
     }
@@ -39,7 +39,7 @@
         "description": "Imported Valencia oranges",
         "price": "3.00",
         "image_url": null,
-        "image": "oranges-pexels-engin-akyurt-2084239.jpg",
+        "image": "oranges-2771926.jpg",
         "is_organic": false,
         "origin": "Australia"
     }
@@ -54,7 +54,7 @@
         "description": "Freshly harvested macadamia nuts",
         "price": "10.00",
         "image_url": null,
-        "image": "macadamias-pexels-engin-akyurt-5425013_NVFActH.jpg",
+        "image": "macadamias-5425013.jpg",
         "is_organic": true,
         "origin": "Onaero Farm"
     }
@@ -69,7 +69,7 @@
         "description": "Freshly harvested potatoes",
         "price": "5.00",
         "image_url": null,
-        "image": "potatoes-pexels-pixabay-144248.jpg",
+        "image": "potatoes-144248.jpg",
         "is_organic": true,
         "origin": "Onaero Farm"
     }
@@ -84,7 +84,7 @@
         "description": "Freshly harvested sweet potato",
         "price": "8.00",
         "image_url": null,
-        "image": "sweetpotato-pexels-jorge-romero-6060223.jpg",
+        "image": "sweetpotatoes-6060223.jpg",
         "is_organic": true,
         "origin": "Onaero Farm"
     }
@@ -99,7 +99,7 @@
         "description": "Freshly picked large avocados",
         "price": "1.50",
         "image_url": null,
-        "image": "avocados-pexels-suraphat-nueaon-940902.jpg",
+        "image": "avocados-940902.jpg",
         "is_organic": true,
         "origin": "Onaero Farm"
     }
@@ -114,7 +114,7 @@
         "description": "Freshly picked tomatoes",
         "price": "3.00",
         "image_url": null,
-        "image": "tomatoes-pexels-pixabay-533280.jpg",
+        "image": "tomatoes-533280.jpg",
         "is_organic": true,
         "origin": "Onaero Farm"
     }
