@@ -122,7 +122,7 @@ else:
 
 # For adding data to elephantSQL
 # DATABASES = {
-#      'default': dj_database_url.parse('postgres://nmmrowir:Gh4XISp8AAniULHUeQc21Bz3RB8nsqDt@tai.db.elephantsql.com/nmmrowir')
+#      'default': dj_database_url.parse('enterdatabaseURL')
 #  }
 
 
