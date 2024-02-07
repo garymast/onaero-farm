@@ -1,0 +1,20 @@
+<script type="text/javascript">
+
+$('.size_input').change(function() {
+    var selectedSize = $(`#id_product_size`).find(":selected").val();
+    var prodPrice = parseFloat('{{ product.price }}');
+    var newPrice = 0.00;
+    
+    if (selectedSize == "250g") { 
+        newPrice = (prodPrice / 2);
+    } else if (selectedSize == "500g"){
+        newPrice = prodPrice;
+    } else {
+        newPrice = (prodPrice * 2);
+    }
+    $(`#price_by_size`).html(`$${newPrice.toFixed(2)}`);
+    
+
+});
+
+</script>
