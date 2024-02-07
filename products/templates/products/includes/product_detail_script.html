@@ -3,7 +3,7 @@
 $('.size_input').change(function() {
     var selectedSize = $(`#id_product_size`).find(":selected").val();
     var prodPrice = parseFloat('{{ product.price }}');
-    var newPrice = 0.00;
+    var newPrice;
     
     if (selectedSize == "250g") { 
         newPrice = (prodPrice / 2);
@@ -13,8 +13,6 @@ $('.size_input').change(function() {
         newPrice = (prodPrice * 2);
     }
     $(`#price_by_size`).html(`$${newPrice.toFixed(2)}`);
-    
-
 });
 
 </script>
