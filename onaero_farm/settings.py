@@ -87,6 +87,8 @@ TEMPLATES = [
     },
 ]
 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
@@ -124,7 +126,7 @@ else:
 
 # For adding data to elephantSQL
 # DATABASES = {
-#      'default': dj_database_url.parse('enterdatabaseURL')
+#      'default': dj_database_url.parse('')
 #  }
 
 
