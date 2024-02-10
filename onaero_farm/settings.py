@@ -26,12 +26,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.environ.get('SECRET_KEY', '')
-SECRET_KEY = "12345"
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
+# SECRET_KEY = "12345"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = True
 
 ALLOWED_HOSTS = ['onaero-farm-530d4e34be31.herokuapp.com', '8000-garymast-onaerofarm-eso41bgwo00.ws-eu108.gitpod.io']
 
@@ -186,6 +186,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 if 'USE_AWS' in os.environ:
+
+        # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'onaero-farm'
     AWS_S3_REGION_NAME = 'us-east-1'
