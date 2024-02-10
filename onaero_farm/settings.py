@@ -30,8 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECRET_KEY = "12345"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
-# DEBUG = True
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['onaero-farm-530d4e34be31.herokuapp.com', '8000-garymast-onaerofarm-eso41bgwo00.ws-eu108.gitpod.io']
 
@@ -222,7 +222,7 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+    DEFAULT_FROM_EMAIL = 'onaerofarm@example.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
