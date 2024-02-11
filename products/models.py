@@ -18,6 +18,7 @@ class Category(models.Model):
         return self.friendly_name
 
 
+
 class Product(models.Model):
     category = models.ForeignKey(
         "Category", null=True, blank=True, on_delete=models.SET_NULL
@@ -35,3 +36,11 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    # def get_price(self):
+    #     if self.has_sizes:
+    #         return 50
+    #         # if self.product.size=="500g":
+    #         #     return 50
+    #     return self.price
+    #         # return self.price

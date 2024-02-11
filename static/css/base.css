@@ -10,6 +10,11 @@ body {
     font-family: 'Lato';
 }
 
+
+:root {
+    --site-col: #0b2a4a;
+  }
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -159,6 +164,11 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

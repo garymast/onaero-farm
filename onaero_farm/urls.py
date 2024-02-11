@@ -29,6 +29,7 @@ urlpatterns = [
     path("bag/", include("bag.urls")),
     path("checkout/", include("checkout.urls")),
     path("profile/", include("profiles.urls")),
+    path("delivery/", include("delivery.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'onaero_farm.views.handler404'

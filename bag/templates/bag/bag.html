@@ -41,7 +41,9 @@
                                     {% include "bag/product-info.html" %}
                                 </div>
                                 <div class="col-12 col-sm-6 order-sm-last">
+
                                     <p class="my-0">Price Each: ${{ item.product.price }}</p>
+
                                     <p><strong>Subtotal: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                 </div>
                                 <div class="col-12 col-sm-6">
@@ -128,6 +130,31 @@
         var form = $(this).prev('.update-form');
         form.submit();
     })
+
+
+
+    // Set Price
+
+    // var allQtyInputs = $('.id-prod-size');
+    // for(var i = 0; i < allQtyInputs.length; i++){
+    //     var itemId = $(allQtyInputs[i]).data('item_id');
+    //     handleEnableDisable(itemId);
+    // }
+
+    // var selectedSize = $(`#prod-size`).val();
+    // var prodPrice = parseFloat('{{ product.price }}');
+    // var newPrice;
+    
+    // if (selectedSize == "250g") { 
+    //     newPrice = (prodPrice / 2);
+    // } else if (selectedSize == "500g"){
+    //     newPrice = prodPrice;
+    // } else {
+    //     newPrice = (prodPrice * 2);
+    // }
+    // $(`#price_by_size`).html(`$${newPrice.toFixed(2)}`);
+
+
 
     // Remove item and reload on click
     $('.remove-item').click(function(e) {
