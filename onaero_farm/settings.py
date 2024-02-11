@@ -30,8 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECRET_KEY = "12345"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = True
 
 ALLOWED_HOSTS = [
     "onaero-farm-530d4e34be31.herokuapp.com",
