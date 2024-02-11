@@ -6,7 +6,7 @@ body {
     /* background: url('/media/pexels-matthias-oben-3687927.jpg') no-repeat center center fixed; */
     /* background-size: cover;
     height: calc(100vh - 105px); */
-    color: #555;
+    color: #383434;
     font-family: 'Lato';
 }
 
@@ -29,7 +29,8 @@ body {
 }
 
 .nav-font {
-    font-size: 15px;
+    font-size: 18px;
+    color: var(--site-col)!important;
 }
 
 .logo-font-2 {
@@ -44,26 +45,27 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: var(--site-col);
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
+    background: var(--site-col);
+    /* background: black; */
     color: white;
 }
 
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    border: 1px solid var(--site-col);
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: var(--site-col);
     color: white !important;
 }
 
@@ -103,7 +105,7 @@ a:hover {
 }
 
 .bg-black {
-    background-color: black;
+    background-color: var(--site-col);
 }
 
 .bg-white {
@@ -125,7 +127,7 @@ a:hover {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid var(--site-col) !important;
 }
 
 .right-pad{
@@ -231,6 +233,10 @@ input::-webkit-inner-spin-button {
     border-bottom-color: #343a40 !important;
 }
 
+.bag-color {
+    color: rgb(116, 99, 18);
+}
+
 .bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
@@ -288,7 +294,7 @@ input::-webkit-inner-spin-button {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: red; /* text-info */
 }
 
 /* Product Form */

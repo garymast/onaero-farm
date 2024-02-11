@@ -9,3 +9,11 @@ class Suburb(models.Model):
 
     def __str__(self):
         return self.suburb
+
+    def get_pop(self):
+        if self.population:
+            return self.population
+        else:
+            return "Unknown"
+        
+

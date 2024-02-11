@@ -19,6 +19,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from .views import handler404
+from . import views
 
 
 urlpatterns = [
@@ -30,6 +31,9 @@ urlpatterns = [
     path("checkout/", include("checkout.urls")),
     path("profile/", include("profiles.urls")),
     path("delivery/", include("delivery.urls")),
+    path("about/", include("about.urls")),
+    path("wholesale/", include("wholesale.urls")),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'onaero_farm.views.handler404'

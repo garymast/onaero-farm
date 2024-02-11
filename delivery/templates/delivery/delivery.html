@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font">Delivery Areas</h2>
-            <p>We are currently servicing the below suburbs, with deliveries every Tuesday and Friday</p>
+            <p>We are currently servicing the below suburbs, with deliveries every Tuesday and Friday. Order cut off is 2pm the day prior to delivery.</p>
             <hr class="w-50 mb-1">
         </div>
     </div>
@@ -19,6 +19,11 @@
                 {% for suburb in suburbs %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card h-100 border-0">
+                            <!-- Create Map -->
+                            
+                                
+
+                            <!-- End Create Map -->
                             <div class="card-body pb-0">
                                 <p class="mb-0 font-weight-bold">{{ suburb.suburb }}
                                 </p>
@@ -26,7 +31,7 @@
                             <div class="card-footer bg-white pt-0 border-0 text-left">
                                 <div class="row">
                                     <div class="col">
-                                        <p class="mb-0 text-left ">Pop: {{ suburb.population }}</p>
+                                        <small><p class="mb-0 text-left ">Pop: {{ suburb.get_pop }}</p></small>
                                     </div>
                                 </div>
                             </div>
