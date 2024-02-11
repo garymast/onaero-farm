@@ -23,6 +23,10 @@ body {
     font-size: 30px;
 }
 
+.nav-font {
+    font-size: 15px;
+}
+
 .logo-font-2 {
     /* font-family: 'Ms Madi', cursive; */
     font-family: 'Caveat', cursive;
