@@ -40,13 +40,14 @@
         <title>Onaero FarmShop {% block extra_title %}{% endblock %}</title>
     </head>
     <body>
-        <div class="container-fluid">
+    <div id="page-container" class ="d-flex flex-column min-vh-100">
+        <div>
             <div id="delivery-banner" class="row text-center">
                 <div class="col bg-black text-white">
                     <h4 class="my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
                 </div>            
             </div>
-        <header class="container-fluid">
+            <header class="container-fluid">
             
             <div class="row">
 
@@ -148,14 +149,18 @@
         {% block content %}
         {% endblock %}
 
+        
+
         {% block postloadjs %}
         <script type="text/javascript">
             $('.toast').toast('show');
         </script>
         {% endblock %}
-
-        <div></div>
+       
     </div>
-    </body>
+    {% include 'includes/footer.html' %} 
+    </div>
+</body>
+    
 </html>
 
