@@ -60,6 +60,10 @@ body {
     width: fit-content;
 }
 
+.bot-margin {
+    margin-bottom: 20px;
+}
+
 .shop-now-button {
     background: var(--site-col);
     color: white;
