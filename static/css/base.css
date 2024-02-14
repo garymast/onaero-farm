@@ -70,6 +70,7 @@ body {
     background: var(--site-col);
     /* background: black; */
     color: white;
+    border-radius: 0px;
 }
 
 .btn-outline-black {
