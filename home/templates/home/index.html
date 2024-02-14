@@ -5,6 +5,33 @@
 {% endblock %}
 
 {% block content %}
-        <div class="image-con">
+<div class="row image-con">
+</div>
+<div class="row justify-content-center top-margin">
+        <div class="col col-md-7 text-left mt-3 my-auto">
+                <h2 class="logo-font">Online Shop</h2>
+                <p>We sell a wide range of products online to most areas of greater New Plymouth -
+                        you'll find something from every area of the shop. Look out for seasonal bundle deals
+                        and don't forget by purchasing from us, you are supporting a locally run family business.
+                </p>
+                <p>
+                        Find locally grown <a href="{% url 'products' %}?category=fruit"><strong>Fruits</strong></a>, 
+                        <a href="{% url 'products' %}?category=vegetables"><strong>Vegetables</strong></a>, 
+                        and a variety of <a href="{% url 'products' %}?category=nuts"><strong>Nuts</strong></a>.
+                </p>
+                <hr class="w-50 mb-1">
         </div>
+</div>
+<div class="row">
+        <div class="product-container col-10 offset-1">
+                <div class="row">
+
+                </div>
+        </div>
+</div>
+<div class="btt-button shadow-sm rounded-0 border border-black">
+        <a class="btt-link d-flex h-100">
+                <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>
+</div>
 {% endblock %}
