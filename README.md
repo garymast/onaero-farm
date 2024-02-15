@@ -223,9 +223,9 @@ OnaeroFarm is my final Portfolio Project for Code Institute's Diploma in Full St
 
 ## Marketing ## 
 
-Here I have made a Social Media Marketing Page for the Onaero FarmShop store. It is a fantastic way to boost and increase engaement within the business and in increasing sales. Here is the screenshot of the whole page available to anyone.
+I have not yet created an official facebook page for the store. See a mockup facebook page below.
 
-![ScreenShot](make facebook mockup)
+![ScreenShot](documents/readme_images/fb-mockup.png)
 
 
 ## Newsletter ##
