@@ -62,7 +62,7 @@ INSTALLED_APPS = [
     "wholesale",
     # Other
     "crispy_forms",
-    "django_extensions",
+    # "django_extensions",
 ]
 
 MIDDLEWARE = [
