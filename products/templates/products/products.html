@@ -85,8 +85,8 @@
                                         href="{% url 'products' %}?category={{ product.category.name }}">
                                         <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                     </a>
-                                    <small class="text-muted"><span>&#160&#160&#160<i
-                                                class="fa-solid fa-earth-americas"></i>&#160</span>{{ product.origin }}</small>
+                                    <small class="text-muted"><span>&#160;&#160;&#160;<i
+                                                class="fa-solid fa-earth-americas"></i>&#160;</span>{{ product.origin }}</small>
                                 </p>
                                 {% endif %}
                                 {% if request.user.is_superuser %}
