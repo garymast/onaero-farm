@@ -6,7 +6,7 @@ Site registration is possible, which allows users to save their delivery informa
 ![ScreenShot](documents/readme_images/AmIResponsive.png)
 
 The live version of the website is available for you here : <a href="https://onaero-farm-530d4e34be31.herokuapp.com/" target="_blank">OnaeroFarm</a>
-And the github repository is available here : <a href="https://github.com/garymast/onaero-farm">Onaero Farm</a>
+and the github repository is available here : <a href="https://github.com/garymast/onaero-farm">Onaero Farm</a>
 
 # README CONTENTS # 
 * ## [UX](#ux-1)
