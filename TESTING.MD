@@ -10,49 +10,37 @@ The following document outlines the testing that was undertaken for this project
     * [Bag](#bag--screenshot)
     * [Checkout](#checkout--screenshot)
     * [Profile](#profile--screenshot)
-    * [Admin](#admin--screenshot)
     * [Products](#products--screenshot)
     * [Footer](#footer--screenshot)
-    * [Home Page](#home-page--screenshot)
-    * [Contact Us](#navbar--screenshot)
+    * [Delivery](#delivery--screenshot)
 * [Validators](#automated-testing)
     * [CI Python Linter](#ci-python-linter)
     * [W3C CSS Validator](#w3c-css-validations)
     * [W3C HTML Validator](#w3c-html-validations)
     * [Lighthouse](#lighthouse-tests)
-    * [WAVE](#wave)
 * [Bugs / Issues](#bugs--issues)
 
 ## Manual Testing ##
 
 In this section I describe the extensive manual testing that was undertaken upon completion of the project.
 
-## Navbar : ![ScreenShot]()
+## Navbar : ![ScreenShot](documents/testing_images/mt-navbar.png)
 
-## Auth : ![ScreenShot]()
+## Auth : ![ScreenShot](documents/testing_images/mt-auth.png)
 
-## Bag : ![ScreenShot]()
+## Bag : ![ScreenShot](documents/testing_images/mt-bag.png)
 
-## Checkout : ![ScreenShot]()
+## Checkout : ![ScreenShot](documents/testing_images/mt-checkout.png)
 
-## Profile : ![ScreenShot]()
+## Profile : ![ScreenShot](documents/testing_images/mt-profile.png)
 
-## Admin : ![ScreenShot]()
+## Products : ![ScreenShot](documents/testing_images/mt-products.png)
 
-## Products : ![ScreenShot]()
+## Footer : ![ScreenShot](documents/testing_images/mt-footer.png)
 
-## Footer : ![ScreenShot]()
-
-## Home Page : ![ScreenShot]()
-
-## About Us : ![ScreenShot]()
-
-## Wholesale : ![ScreenShot]()
-
-## Delivery : ![ScreenShot]()
+## Delivery : ![ScreenShot](documents/testing_images/mt-delivery.png)
 
 ## Validators ## 
-
 
 ### W3C HTML Validations ### 
 
@@ -98,47 +86,36 @@ In this section I describe the extensive manual testing that was undertaken upon
 
 I have completed a series of lighthouse tests for the performance of the site and other aspects.
 
-### Home Page Desktop : ![ScreenShot](documents/testing_images/lh-home.png)
+### Home Page : ![ScreenShot](documents/testing_images/lh-home.png)
 <hr>
 
-### Products Page Desktop : ![ScreenShot](documents/testing_images/lh-products.png)
+### Products Page : ![ScreenShot](documents/testing_images/lh-products.png)
 <hr>
 
-### Products Details Page Desktop : ![ScreenShot](documents/testing_images/lh-prod-detail.png)
+### Products Details Page : ![ScreenShot](documents/testing_images/lh-prod-detail.png)
 <hr>
 
-### Delivery Page Desktop : ![ScreenShot](documents/testing_images/lh-delivery.png)
+### Delivery Page : ![ScreenShot](documents/testing_images/lh-delivery.png)
 <hr>
 
-### Shopping Cart Page Desktop : ![ScreenShot](documents/testing_images/lh-bag.png)
+### Shopping Cart Page : ![ScreenShot](documents/testing_images/lh-bag.png)
 <hr>
 
-### Checkout Page Desktop : ![ScreenShot](documents/testing_images/lh-checkout.png)
+### Checkout Page : ![ScreenShot](documents/testing_images/lh-checkout.png)
 <hr>
 
 
-* From these tests I can see that performance wise the website could be initially improved, most likely it is due to image sizing/formats. I think with further optimizations the website can achieve fantastic results here.
-
-## WAVE ##
-
-I have also put the website through the WAVE accessibility testing with the following results :
-
-![ScreenShot](./documents/testing_images/WAVE-SCREENSHOT-HOME.png)
+* It is clear from these results, that the site needs further optimizations. Due to time constraints it wasn't possible at this stage but as this will be a real site in the future, these optimizations will take place in due course.
 
 
 ## Website Responsiveness ##
 
-The website has been developed to the most extent by the Front-End Library called Bootstrap. It is an amazing help towards front-end development that has a ton of features that help with the alignment of content around the website.
-I have tested the website on multiple devices and it works great.
-I have used the Chrome Development tools to adjust things accordingly to suit as much devices as possible.
+I have developed the website using bootstrap. The built in bootstrap classes allowed me to maintain responsiveness across all device sizes. I continuosuly checked for responsiveness throughout the project development. Chrome Development tools were of great assistance in this area.
 
 ## Bugs / Issues ##
 
-Here I document any known to me or to anyone else that spots any bugs or issues currently going on with the site. 
+There were a number of bugs during development. There are two bugs which I believe are fixed, but there is the potential for them to arise again. They are described below:
 
-        1. On specially small screen sizes the text from the dropdown menu from My Account navbar , overflows off screen as it is "too long" , which really is just a visual issue.
+        1. AT one point in time, there was an issue with the container width and it caused there to be some side scroll in the website. I believe this issue is fixed.
 
-        2. On further inspection I have found by previously trying to fix the sorting by price filter on the products page I have made another bug that the sorting by ratings doesn't work properly. Also other filter types will need to be  adjusted to better suit the products as they don't seem to be working as intended either apart from Pricing from low-high / high-low. That issue will have to be addressed as soon as possible.
-
-Any further issues upon inspection and review will be noted here.
-I am dedicated to keeping this site free of any issues to provide the best experience for users as possible.
+        2. When the bag page was viewed in mobile, it was not possible to increase an item quantity. This was due to some javascript I wrote to prevent users from purchasing more than what is in stock. I have since removed this code due to time constraints.
