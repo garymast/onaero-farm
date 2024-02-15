@@ -15,8 +15,8 @@
                         and don't forget by purchasing from us, you are supporting a locally run family business.
                 </p>
                 <p>
-                        Find locally grown <a href="{% url 'products' %}?category=fruit"><strong>Fruits</strong></a>, 
-                        <a href="{% url 'products' %}?category=vegetables"><strong>Vegetables</strong></a>, 
+                        Find locally grown <a href="{% url 'products' %}?category=fruit"><strong>Fruits</strong></a>,
+                        <a href="{% url 'products' %}?category=vegetables"><strong>Vegetables</strong></a>,
                         and a variety of <a href="{% url 'products' %}?category=nuts"><strong>Nuts</strong></a>.
                 </p>
                 <hr class="w-50 mb-1">
@@ -34,4 +34,13 @@
                 <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
         </a>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+        $('.btt-link').click(function (e) {
+                window.scrollTo(0, 0)
+        })
+</script>
 {% endblock %}

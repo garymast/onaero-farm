@@ -38,7 +38,10 @@ def bag_contents(request):
                 )
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
-        delivery = settings.STANDARD_DELIVERY_FEE
+        if total == 0:
+            delivery = 0
+        else:
+            delivery = settings.STANDARD_DELIVERY_FEE
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
     else:
         delivery = 0
