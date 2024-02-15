@@ -415,7 +415,6 @@ input::-webkit-inner-spin-button {
     background: var(--site-col);
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
-    width: px;
     color: white;
 }
 
